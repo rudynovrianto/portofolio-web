@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudy Novrianto - Software Developer & Landing Page Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
+        /* Animasi kustom untuk floating cards */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-float-slow { animation: float 4s ease-in-out infinite; }
+        .animate-float-fast { animation: float 3s ease-in-out infinite; }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <!-- Header / Navbar -->
+    <header class="fixed w-full top-0 bg-slate-900/90 backdrop-blur-md z-50 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-tight text-white">Rudy<span class="text-orange-500">.</span></h1>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-300">
+                <a href="#about" class="hover:text-orange-400 transition">Tentang</a>
+                <a href="#skills" class="hover:text-orange-400 transition">Keahlian</a>
+                <a href="#projects" class="hover:text-orange-400 transition">Portofolio</a>
+                <a href="#testimonials" class="hover:text-orange-400 transition">Testimoni</a>
+            </nav>
+            <a href="https://wa.me/6283898709004" target="_blank" class="hidden md:inline-block bg-orange-500 hover:bg-orange-600 text-white text-sm font-bold py-2 px-5 rounded-full transition shadow-lg shadow-orange-500/30">Konsultasi WA</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-36 pb-20 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        
+        <!-- Bagian Kiri: Teks -->
+        <div class="flex-1 z-10">
+            <p class="text-orange-400 font-bold mb-3 tracking-widest uppercase text-sm">Halo, Saya</p>
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight text-white">Rudy Novrianto</h2>
+            <h3 class="text-2xl text-slate-400 mb-6 font-medium">Software Developer & <span class="text-orange-400">Landing Page Specialist</span></h3>
+            <p class="text-slate-400 leading-relaxed mb-8 max-w-lg text-lg">
+                Saya membantu pemilik usaha lokal meningkatkan omzet dan kepercayaan pelanggan melalui pembuatan *landing page* yang profesional, 100% responsif, dan berkinerja tinggi.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#projects" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition shadow-lg shadow-orange-500/40">Lihat Karya Saya</a>
+                <a href="https://wa.me/6283898709004" target="_blank" class="bg-transparent hover:bg-slate-800 text-slate-300 font-bold py-3 px-8 rounded-lg transition border-2 border-slate-700 hover:border-orange-500 hover:text-orange-400">Hubungi Saya</a>
+            </div>
+        </div>
+        
+        <!-- Bagian Kanan: Mockup HP & Floating Cards -->
+        <div class="flex-1 relative flex justify-center items-center h-[28rem] w-full mt-10 md:mt-0">
+            
+            <!-- Badge 1: Kecepatan -->
+            <div class="absolute top-4 md:top-10 left-0 md:-left-4 bg-slate-800 border border-slate-700 p-3 rounded-xl shadow-2xl shadow-orange-500/10 z-20 flex items-center gap-3 animate-float-slow">
+                <div class="bg-orange-500/20 p-2 rounded-lg text-orange-400 text-xl">⚡</div>
+                <div>
+                    <p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Performa</p>
+                    <p class="text-sm text-white font-bold">Loading Cepat</p>
+                </div>
+            </div>
+
+            <!-- Badge 2: Responsif -->
+            <div class="absolute bottom-10 md:bottom-16 right-0 md:-right-4 bg-slate-800 border border-slate-700 p-3 rounded-xl shadow-2xl shadow-orange-500/10 z-20 flex items-center gap-3 animate-float-fast">
+                <div class="bg-blue-500/20 p-2 rounded-lg text-blue-400 text-xl">📱</div>
+                <div>
+                    <p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Desain</p>
+                    <p class="text-sm text-white font-bold">100% Responsif</p>
+                </div>
+            </div>
+
+            <!-- Mockup Smartphone (Dibuat dengan Tailwind CSS) -->
+            <div class="relative w-64 h-[26rem] bg-slate-900 border-[6px] border-slate-700 rounded-[2.5rem] shadow-2xl shadow-orange-500/20 overflow-hidden flex flex-col z-10 transform rotate-[-5deg] hover:rotate-0 transition duration-500 group cursor-pointer">
+                <!-- Notch / Kamera HP -->
+                <div class="absolute top-0 inset-x-0 mx-auto w-24 h-6 bg-slate-700 rounded-b-2xl z-20"></div>
+                <!-- Isi Layar HP (Mini Dummy Web) -->
+                <div class="flex-1 bg-slate-50 flex flex-col pt-8 relative">
+                    <div class="flex justify-between items-center px-4 py-3 border-b border-slate-200">
+                        <div class="w-16 h-3 bg-slate-800 rounded-full"></div>
+                        <div class="w-6 h-3 bg-orange-500 rounded-full"></div>
+                    </div>
+                    <div class="px-4 mt-6 text-center">
+                        <div class="w-3/4 h-5 bg-slate-800 rounded-md mx-auto mb-3"></div>
+                        <div class="w-full h-2 bg-slate-300 rounded-full mx-auto mb-2"></div>
+                        <div class="w-5/6 h-2 bg-slate-300 rounded-full mx-auto mb-6"></div>
+                        <div class="w-24 h-8 bg-orange-500 rounded-full mx-auto shadow-md shadow-orange-500/40 group-hover:bg-orange-600 transition"></div>
+                    </div>
+                    <div class="px-4 mt-8 flex gap-3">
+                        <div class="flex-1 h-28 bg-slate-200 rounded-xl overflow-hidden flex flex-col">
+                            <div class="h-14 bg-slate-300 w-full"></div>
+                            <div class="p-2"><div class="w-full h-2 bg-slate-400 rounded-full mb-1"></div><div class="w-2/3 h-2 bg-slate-400 rounded-full"></div></div>
+                        </div>
+                        <div class="flex-1 h-28 bg-slate-200 rounded-xl overflow-hidden flex flex-col">
+                            <div class="h-14 bg-slate-300 w-full"></div>
+                            <div class="p-2"><div class="w-full h-2 bg-slate-400 rounded-full mb-1"></div><div class="w-2/3 h-2 bg-slate-400 rounded-full"></div></div>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 w-full h-16 bg-gradient-to-t from-slate-50 to-transparent"></div>
+                </div>
+            </div>
+            
+            <!-- Lingkaran Dekorasi di Belakang HP -->
+            <div class="absolute w-80 h-80 bg-orange-500/10 rounded-full blur-3xl z-0"></div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="py-10 border-y border-slate-800 bg-slate-900/50 relative z-10">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-sm font-semibold text-slate-500 uppercase tracking-widest mb-8">Telah Dipercaya Oleh Berbagai Bisnis</p>
+            <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition duration-500">
+                <!-- Mitra 1 -->
+                <div class="text-xl font-extrabold text-slate-300 flex items-center gap-2 cursor-default hover:text-white transition">
+                    <span class="text-3xl">🏢</span> Hasta Lestari Jaya
+                </div>
+                <!-- Mitra 2 -->
+                <div class="text-xl font-extrabold text-slate-300 flex items-center gap-2 cursor-default hover:text-white transition">
+                    <span class="text-3xl">🚘</span> AutoMobilindo
+                </div>
+                <!-- Mitra 3 -->
+                <div class="text-xl font-extrabold text-slate-300 flex items-center gap-2 cursor-default hover:text-white transition">
+                    <span class="text-3xl">🧺</span> WashWhess
+                </div>
+                <!-- Mitra 4 -->
+                <div class="text-xl font-extrabold text-slate-300 flex items-center gap-2 cursor-default hover:text-white transition">
+                    <span class="text-3xl">💻</span> UMKM Tech
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-slate-800/30 relative z-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-sm font-bold tracking-widest text-orange-500 uppercase text-center mb-2">Tech Stack</h3>
+            <h4 class="text-3xl font-bold mb-10 text-center text-white">Keahlian & Teknologi</h4>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="px-6 py-3 bg-slate-900 rounded-lg border border-slate-700 text-slate-300 font-semibold hover:border-orange-500 transition cursor-default shadow-sm">HTML5 & Tailwind CSS</span>
+                <span class="px-6 py-3 bg-slate-900 rounded-lg border border-slate-700 text-slate-300 font-semibold hover:border-orange-500 transition cursor-default shadow-sm">UI/UX Design</span>
+                <span class="px-6 py-3 bg-slate-900 rounded-lg border border-slate-700 text-slate-300 font-semibold hover:border-orange-500 transition cursor-default shadow-sm">Laravel</span>
+                <span class="px-6 py-3 bg-slate-900 rounded-lg border border-slate-700 text-slate-300 font-semibold hover:border-orange-500 transition cursor-default shadow-sm">React Native</span>
+                <span class="px-6 py-3 bg-slate-900 rounded-lg border border-slate-700 text-slate-300 font-semibold hover:border-orange-500 transition cursor-default shadow-sm">MySQL</span>
+                <span class="px-6 py-3 bg-slate-900 rounded-lg border border-slate-700 text-slate-300 font-semibold hover:border-orange-500 transition cursor-default shadow-sm">Delphi</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-6 max-w-6xl mx-auto border-t border-slate-800">
+        <div class="text-center mb-16">
+            <h3 class="text-sm font-bold tracking-widest text-orange-500 uppercase mb-2">Portofolio</h3>
+            <h4 class="text-4xl font-bold text-white">Karya & Demo Bisnis</h4>
+            <p class="text-slate-400 mt-4 max-w-2xl mx-auto">Beberapa contoh desain antarmuka (*mockup*) dan sistem yang telah saya rancang untuk membantu berbagai sektor bisnis lokal beralih ke digital secara profesional.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <!-- Project 1: Showroom (Link Live & Foto Screenshot) -->
+            <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 group hover:border-orange-500 transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-orange-500/20">
+                <div class="h-56 relative overflow-hidden bg-slate-700 flex items-center justify-center">
+                    <!-- Ingat: Ganti 'screenshot-showroom.jpg' dengan file foto Anda sendiri jika sudah punya -->
+                    <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Screenshot AutoShowroom" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/20 to-transparent"></div>
+                </div>
+                <div class="p-8 relative">
+                    <h4 class="text-2xl font-bold mb-3 text-white group-hover:text-orange-400 transition">AutoShowroom Landing Page</h4>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">Demo etalase digital berkinerja tinggi untuk *dealer* kendaraan. Fokus pada katalog stok yang elegan, filter pencarian, dan tombol konversi WhatsApp.</p>
+                    <a href="https://showroom.solusiteknologi.cloud/" target="_blank" class="text-orange-500 hover:text-orange-400 font-bold flex items-center gap-2">Lihat Demo Langsung <span aria-hidden="true">&rarr;</span></a>
+                </div>
+            </div>
+
+            <!-- Project 2: Laundry -->
+            <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 group hover:border-orange-500 transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-orange-500/20">
+                <div class="h-56 bg-slate-700 flex items-center justify-center text-slate-500 relative overflow-hidden">
+                    <span class="z-10 font-bold text-lg text-white">Demo UI - Jasa Laundry</span>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+                </div>
+                <div class="p-8 relative">
+                    <h4 class="text-2xl font-bold mb-3 text-white group-hover:text-orange-400 transition">WashWhess Laundry Kiloan</h4>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">Desain *landing page* yang bersih dan ceria untuk layanan *laundry*. Dilengkapi fitur tabel harga, layanan antar-jemput, dan testimoni pelanggan.</p>
+                    <a href="#" class="text-orange-500 hover:text-orange-400 font-bold flex items-center gap-2">Lihat Demo Langsung <span aria-hidden="true">&rarr;</span></a>
+                </div>
+            </div>
+
+            <!-- Project 3: Kuliner -->
+            <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 group hover:border-orange-500 transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-orange-500/20">
+                <div class="h-56 bg-slate-700 flex items-center justify-center text-slate-500 relative overflow-hidden">
+                    <span class="z-10 font-bold text-lg text-white">Demo UI - Rumah Makan</span>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+                </div>
+                <div class="p-8 relative">
+                    <h4 class="text-2xl font-bold mb-3 text-white group-hover:text-orange-400 transition">RM Minang Sakato</h4>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">Halaman web menggugah selera untuk bisnis kuliner lokal. Menampilkan galeri menu andalan, integrasi pesanan via WA, dan lokasi Maps.</p>
+                    <a href="#" class="text-orange-500 hover:text-orange-400 font-bold flex items-center gap-2">Lihat Demo Langsung <span aria-hidden="true">&rarr;</span></a>
+                </div>
+            </div>
+
+            <!-- Project 4: POS System -->
+            <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 group hover:border-orange-500 transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-orange-500/20">
+                <div class="h-56 bg-slate-700 flex items-center justify-center text-slate-500 relative overflow-hidden">
+                    <span class="z-10 font-bold text-lg text-white">Sistem Kasir (Laravel)</span>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+                </div>
+                <div class="p-8 relative">
+                    <h4 class="text-2xl font-bold mb-3 text-white group-hover:text-orange-400 transition">Multi-Business POS System</h4>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">Aplikasi kasir (*Point of Sale*) kompleks dengan arsitektur *multi-tenancy*. Dibangun untuk membantu efisiensi inventaris para pelaku UMKM.</p>
+                    <span class="text-slate-500 font-bold flex items-center gap-2 cursor-not-allowed">Repositori Privat 🔒</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimoni Section -->
+    <section id="testimonials" class="py-24 px-6 bg-slate-800/20 border-t border-slate-800 relative z-10">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-sm font-bold tracking-widest text-orange-500 uppercase mb-2">Testimoni Klien</h3>
+                <h4 class="text-4xl font-bold text-white">Apa Kata Mereka?</h4>
+                <p class="text-slate-400 mt-4 max-w-xl mx-auto">Kepuasan klien adalah prioritas utama saya. Berikut adalah pengalaman mereka setelah bisnisnya di-digitalisasi.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 relative group hover:border-orange-500 transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10">
+                    <div class="text-orange-500 text-6xl absolute top-4 right-6 opacity-10 font-serif group-hover:opacity-20 transition">"</div>
+                    <div class="flex gap-1 text-orange-400 mb-6 text-sm">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-8 italic">"Semenjak dibuatkan landing page sama Mas Rudy, banyak klien dari luar kota yang gampang cek stok mobil kita. Desainnya mewah dan konversi ke WA sangat efektif. Omzet naik drastis!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-2xl border border-slate-600">👨🏽</div>
+                        <div>
+                            <h5 class="text-white font-bold text-sm">Bapak Anton</h5>
+                            <p class="text-orange-400 text-xs font-semibold">Owner Showroom Mobil</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 relative group hover:border-orange-500 transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10">
+                    <div class="text-orange-500 text-6xl absolute top-4 right-6 opacity-10 font-serif group-hover:opacity-20 transition">"</div>
+                    <div class="flex gap-1 text-orange-400 mb-6 text-sm">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-8 italic">"Website-nya sangat rapi, loading-nya super cepat gak bikin emosi, dan desainnya menggugah selera pelanggan. Penjualan katering & resto kami meningkat pesat bulan ini."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-2xl border border-slate-600">🧕🏼</div>
+                        <div>
+                            <h5 class="text-white font-bold text-sm">Ibu Siti Khadijah</h5>
+                            <p class="text-orange-400 text-xs font-semibold">Pemilik Bisnis Kuliner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 relative group hover:border-orange-500 transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10">
+                    <div class="text-orange-500 text-6xl absolute top-4 right-6 opacity-10 font-serif group-hover:opacity-20 transition">"</div>
+                    <div class="flex gap-1 text-orange-400 mb-6 text-sm">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-8 italic">"Sistem yang dibuatkan benar-benar mempermudah pendataan inventaris. Komunikasinya juga gampang, *developer*-nya responsif kalau diajak diskusi. Sukses terus Mas!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-2xl border border-slate-600">👨🏻‍💼</div>
+                        <div>
+                            <h5 class="text-white font-bold text-sm">Rio Pratama</h5>
+                            <p class="text-orange-400 text-xs font-semibold">Pengelola UMKM</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-slate-800 text-center text-slate-500 text-sm bg-slate-900">
+        <p class="font-medium text-slate-400 text-base mb-2">Siap mendigitalkan bisnis Anda?</p>
+        <p>&copy; 2026 Rudy Novrianto. Crafted with Passion & Code.</p>
+    </footer>
+
+</body>
+</html>
