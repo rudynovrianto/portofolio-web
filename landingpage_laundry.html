@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WashWhess - Laundry Kiloan & Satuan Tangerang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Poppins', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Tombol WA Melayang -->
+    <a href="#" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-2xl transition-transform hover:scale-110 z-50 flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.888-4.441 9.889-9.89.001-5.45-4.436-9.89-9.885-9.89-5.449 0-9.888 4.441-9.889 9.89-.001 1.836.52 3.52 1.446 5.163l-1.06 3.867 3.967-1.04zM8.287 7.024c.328-.727.67-.741.979-.751.272-.01.584-.01.897-.01.314 0 .825.118 1.255.74.43.623 1.65 1.808 1.807 2.12.157.311.261.674.105 1.036-.157.362-.235.596-.47.881-.235.285-.497.625-.707.834-.236.235-.482.492-.209.961.272.47 1.213 2.008 2.6 3.245 1.795 1.598 3.327 2.1 3.824 2.335.497.235.786.183 1.074-.158.288-.34 1.256-1.464 1.595-1.966.338-.501.676-.418 1.121-.261.445.157 2.812 1.325 3.295 1.56.483.235.804.366.921.572.118.206.118 1.197-.367 2.355-1.122 2.68-6.19 2.583-6.19 2.583-10.428-1.573-15.02-12.025-15.02-12.025-.138-.184-3.568-4.75-3.568-9.066 0-4.315 2.222-6.425 3.007-7.234.786-.81 1.701-.983 2.277-.983z"/></svg>
+        <span class="font-bold hidden md:inline">Order via WA</span>
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-cyan-600 flex items-center gap-2">
+                <span class="text-3xl">🫧</span> WashWhess
+            </h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#layanan" class="font-semibold text-slate-600 hover:text-cyan-600">Layanan</a>
+                <a href="#harga" class="font-semibold text-slate-600 hover:text-cyan-600">Harga</a>
+                <a href="#lokasi" class="font-semibold text-slate-600 hover:text-cyan-600">Lokasi</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cyan-50 pt-16 pb-20 px-4 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10 relative z-10">
+            <div class="flex-1 text-center md:text-left">
+                <span class="bg-cyan-100 text-cyan-700 px-4 py-1 rounded-full text-sm font-bold tracking-wide mb-4 inline-block">GRATIS ANTAR JEMPUT 🛵</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-800 leading-tight mb-6">Cucian Numpuk?<br>Biar <span class="text-cyan-600">WashWhess</span> yang Urus!</h2>
+                <p class="text-lg text-slate-600 mb-8 max-w-lg">Nikmati waktu luang Anda bersama keluarga. Kami pastikan pakaian Anda bersih, rapi, wangi, dan bebas bakteri.</p>
+                <a href="#harga" class="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-4 px-8 rounded-xl transition shadow-lg shadow-cyan-500/30 text-lg inline-block">Lihat Daftar Harga</a>
+            </div>
+            
+            <!-- Hero Image Mockup -->
+            <div class="flex-1 w-full relative flex justify-center">
+                <div class="w-72 h-72 md:w-96 md:h-96 bg-white rounded-full border-8 border-cyan-200 flex items-center justify-center shadow-2xl relative z-10 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1545173168-9f1947eebb7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Laundry Service" class="w-full h-full object-cover">
+                </div>
+                <!-- Bubble Decorations -->
+                <div class="absolute top-10 right-10 text-4xl animate-bounce">🫧</div>
+                <div class="absolute bottom-10 left-10 text-5xl animate-bounce" style="animation-delay: 1s;">🫧</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan (Why Us) -->
+    <section class="py-16 bg-white px-4 -mt-6 rounded-t-3xl relative z-20">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-cyan-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">🌸</div>
+                    <h3 class="text-xl font-bold mb-2">Wangi Tahan Lama</h3>
+                    <p class="text-slate-500 text-sm">Menggunakan deterjen cair premium dan pewangi khusus yang aman untuk serat pakaian.</p>
+                </div>
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-cyan-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">⏱️</div>
+                    <h3 class="text-xl font-bold mb-2">Tepat Waktu</h3>
+                    <p class="text-slate-500 text-sm">Tersedia layanan kilat 1 hari selesai. Pakaian dijamin rapi dan siap masuk lemari.</p>
+                </div>
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-cyan-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">🛵</div>
+                    <h3 class="text-xl font-bold mb-2">Layanan Antar Jemput</h3>
+                    <p class="text-slate-500 text-sm">Sibuk? Kurir kami siap menjemput cucian kotor ke rumah sakit, apartemen, atau rumah Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Harga -->
+    <section id="harga" class="py-20 bg-slate-50 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-slate-800">Daftar Harga Layanan</h3>
+                <p class="text-slate-500 mt-2">Pilih layanan yang sesuai dengan kebutuhan Anda</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Paket 1 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition relative overflow-hidden">
+                    <h4 class="text-xl font-bold text-slate-800 mb-2">Cuci Komplit Reguler</h4>
+                    <p class="text-slate-500 text-sm mb-6">Selesai dalam 3 Hari (Cuci + Setrika)</p>
+                    <div class="text-3xl font-extrabold text-cyan-600 mb-6">Rp 7.000<span class="text-base text-slate-400 font-normal">/kg</span></div>
+                    <ul class="text-slate-600 text-sm space-y-3 mb-8">
+                        <li class="flex items-center gap-2">✅ Cuci bersih bebas noda</li>
+                        <li class="flex items-center gap-2">✅ Setrika uap anti gosong</li>
+                        <li class="flex items-center gap-2">✅ Packing plastik rapi</li>
+                    </ul>
+                    <button class="w-full bg-slate-800 text-white font-bold py-3 rounded-xl hover:bg-cyan-600 transition">Pilih Paket</button>
+                </div>
+
+                <!-- Paket 2 -->
+                <div class="bg-cyan-600 rounded-2xl p-8 shadow-xl shadow-cyan-600/30 transform md:-translate-y-4 relative overflow-hidden text-white">
+                    <div class="absolute top-4 right-4 bg-orange-500 text-xs font-bold px-3 py-1 rounded-full uppercase">Paling Laris</div>
+                    <h4 class="text-xl font-bold mb-2">Cuci Komplit Kilat</h4>
+                    <p class="text-cyan-100 text-sm mb-6">Selesai dalam 24 Jam (Cuci + Setrika)</p>
+                    <div class="text-3xl font-extrabold mb-6">Rp 10.000<span class="text-base font-normal opacity-80">/kg</span></div>
+                    <ul class="text-cyan-50 text-sm space-y-3 mb-8">
+                        <li class="flex items-center gap-2">✅ Prioritas pengerjaan</li>
+                        <li class="flex items-center gap-2">✅ Setrika uap anti gosong</li>
+                        <li class="flex items-center gap-2">✅ Pewangi ekstra premium</li>
+                    </ul>
+                    <button class="w-full bg-white text-cyan-700 font-bold py-3 rounded-xl hover:bg-cyan-50 transition shadow-lg">Pilih Paket</button>
+                </div>
+
+                <!-- Paket 3 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition relative overflow-hidden">
+                    <h4 class="text-xl font-bold text-slate-800 mb-2">Laundry Satuan</h4>
+                    <p class="text-slate-500 text-sm mb-6">Perawatan khusus pakaian premium</p>
+                    <div class="text-3xl font-extrabold text-cyan-600 mb-6">Mulai Rp 15k<span class="text-base text-slate-400 font-normal">/pcs</span></div>
+                    <ul class="text-slate-600 text-sm space-y-3 mb-8">
+                        <li class="flex items-center gap-2">✅ Jas / Gaun Pesta</li>
+                        <li class="flex items-center gap-2">✅ Cuci Sepatu Sneaker</li>
+                        <li class="flex items-center gap-2">✅ Bedcover / Selimut Besar</li>
+                    </ul>
+                    <button class="w-full bg-slate-800 text-white font-bold py-3 rounded-xl hover:bg-cyan-600 transition">Lihat Harga</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alur Kerja -->
+    <section class="py-16 bg-cyan-600 text-white px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-10">Cara Order Super Gampang</h3>
+            <div class="flex flex-col md:flex-row justify-center gap-8 md:gap-4">
+                <div class="flex-1">
+                    <div class="w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 border-4 border-cyan-400">1</div>
+                    <h4 class="font-bold text-lg">Hubungi WA</h4>
+                    <p class="text-cyan-100 text-sm mt-2">Chat kami alamat dan jam jemput.</p>
+                </div>
+                <div class="flex-1">
+                    <div class="w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 border-4 border-cyan-400">2</div>
+                    <h4 class="font-bold text-lg">Kurir Menjemput</h4>
+                    <p class="text-cyan-100 text-sm mt-2">Cucian akan ditimbang di lokasi.</p>
+                </div>
+                <div class="flex-1">
+                    <div class="w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 border-4 border-cyan-400">3</div>
+                    <h4 class="font-bold text-lg">Proses Cuci</h4>
+                    <p class="text-cyan-100 text-sm mt-2">Dicuci sesuai SOP kebersihan ketat.</p>
+                </div>
+                <div class="flex-1">
+                    <div class="w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 border-4 border-cyan-400">4</div>
+                    <h4 class="font-bold text-lg">Diantar Kembali</h4>
+                    <p class="text-cyan-100 text-sm mt-2">Cucian bersih, wangi, rapi sampai rumah.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="lokasi" class="bg-slate-900 text-slate-400 py-12 px-4">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center border-b border-slate-700 pb-8 mb-8">
+            <div>
+                <h2 class="text-2xl font-bold text-white mb-4">WashWhess Laundry</h2>
+                <p class="text-sm mb-4 max-w-sm">Solusi laundry kiloan dan satuan terpercaya. Bersih, wangi, rapi, dan tepat waktu.</p>
+                <p class="text-sm">📍 Jl. Prambanan Raya, Cibodas Baru, Tangerang</p>
+                <p class="text-sm mt-2">📞 0812-XXXX-XXXX</p>
+            </div>
+            <div class="bg-slate-800 h-48 rounded-xl flex items-center justify-center border border-slate-700 relative overflow-hidden">
+                 <!-- Pura-puranya peta -->
+                 <span class="text-slate-500 font-semibold z-10 text-center">Widget Google Maps<br>Cibodas Baru, Tangerang</span>
+                 <div class="absolute inset-0 bg-slate-700 opacity-50 bg-[url('https://www.transparenttextures.com/patterns/grid-me.png')]"></div>
+            </div>
+        </div>
+        <div class="max-w-5xl mx-auto text-center text-sm">
+            &copy; 2026 WashWhess Laundry. All rights reserved. | Dirancang oleh Profesional Web Developer.
+        </div>
+    </footer>
+
+</body>
+</html>
