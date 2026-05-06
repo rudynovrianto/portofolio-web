@@ -1,0 +1,17 @@
+{
+  "name": "portofolio-web",
+  "version": "1.0.0",
+  "description": "Portfolio website for Rudy Novrianto - Software Developer & Landing Page Specialist",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "npx http-server -p 3000"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.1.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
